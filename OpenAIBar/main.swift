@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  CLIBar
+//  OpenAIBar
 //
 //  Created by Andrew Duffy on 3/28/23.
 //
