@@ -19,8 +19,11 @@ jobs:
           scheme: OpenAIBar
         run: |
           xcodebuild
+      - name: Tar built app
+        run: |
+          tar -cvzf openaibar.app.tgz -C build/Release OpenAIBar.app
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: OpenAIBar.app
-          path: build/release/OpenAIBar.app
+          name: OpenAIBar.app.tgz
+          path: openaibar.app.tgz
